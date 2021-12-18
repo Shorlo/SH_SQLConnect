@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package SH_SQLConnect;
 
 import java.sql.Connection;
@@ -19,7 +15,6 @@ public class SH_SQLConnectJFrameForm extends javax.swing.JFrame {
     public static final String URL = "jdbc:mysql://localhost:3306/escuela";
     public static final String USERNAME = "root";
     public static final String PASSWORD = "1234";
-    
     
     /**
      * Creates new form SH_SQLConnectJFrameForm
@@ -106,14 +101,11 @@ public class SH_SQLConnectJFrameForm extends javax.swing.JFrame {
         catch (Exception error)
         {
             System.out.println("Connection failed!!" + error);
-        }
-                
-        
+        }     
     }//GEN-LAST:event_btnConnectActionPerformed
 
-    
     /*
-    * Connection code.
+    * Connection code
     */
     public static Connection getConnection()
     {
@@ -160,8 +152,10 @@ public class SH_SQLConnectJFrameForm extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
+        java.awt.EventQueue.invokeLater(new Runnable() 
+        {
+            public void run() 
+            {
                 new SH_SQLConnectJFrameForm().setVisible(true);
             }
         });
