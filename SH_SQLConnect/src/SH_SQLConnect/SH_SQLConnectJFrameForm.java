@@ -121,7 +121,7 @@ public class SH_SQLConnectJFrameForm extends javax.swing.JFrame {
         
         try
         {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             con = (Connection) DriverManager.getConnection(URL, USERNAME, PASSWORD);
             JOptionPane.showMessageDialog(null,"Connection succsess!!");
         }
